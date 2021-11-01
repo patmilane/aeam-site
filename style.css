@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Titillium+Web:wght@200&display=swap');
+/*importada de https://fonts.google.com , usada no h1*/
+
+@font-face {
+  font-family: 'FonteSubtitulo';
+  src: url("../OpenSans.ttf"); /*fonte baixada e usada no h2*/
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+    /*  background-image: url("fundo.jpg"); */
+      background-color: hsla(164, 61%, 86%, 0.5);
+   /*   background-color: lightblue; */
+  }
+
+  /*carrosel*/
+
+.carrosel{
+  width: 1200px;
+  height: 270px;
+  /*box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);*/
+  overflow: hidden; /*ocultar o q nao caber nele*/
+  padding: 5px;
+  margin: auto;
+
+}
+
+.carrosel ul{
+  display: flex;
+  list-style: none;
+  width: 1200px;
+  height: 100px;
+}
+
+.carrosel li{
+  position: relative;
+  animation: slide 10s infinite ease-out;
+}
+
+@keyframes slide{
+  0%{left: 0px}
+  20%{left: 0px}
+  60%{left: -100px}
+  100%{left: -1900px}
+  
+}
+  /*fim carrosel*/
+
+  div#interface {
+    width: auto;
+    background-color: rgb(43, 118, 165);
+    margin:-20px auto 20px auto; /*centralizando o conteudo da div*/
+    /*box-shadow: 0px 0px 10px gray;*/
+    padding: 08px;
+  }
+
+  div#conteudo {
+    width: 1000px;
+    font-family:monospace;
+    color: rgb(82, 79, 79);
+    background-color: rgba(232, 237, 240, 0.4);
+    margin:-10px auto 0px auto; /*centralizando o conteudo da div*/
+    box-shadow: 0px 10px 10px rgb(88, 87, 87);
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  div#conteudo h1{
+    color:rgba(84, 82, 88, 0.973);
+    text-shadow: 0.1em 0.1em 0.2em gray  }
+
+  div#conteudo h2{
+    color:rgba(44, 42, 42, 0.61)
+  }
+
+  div#conteudo img#separador{
+    width: 350px;
+    height: auto;
+  }
+
+  div#conteudo img#separador2{
+    width: 950px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  div#conteudo img#servicos{
+    height: auto;
+    margin-left: 60px;
+  }
+
+  div#conteudo img#associese:hover{
+    opacity: 1;
+    background-color: rgb(63, 109, 156); 
+  }
+
+  p{
+    text-align: justify;
+    text-indent: 50px;
+  }
+
+  header#cabecalho img#icone {
+    position: absolute;
+    left: 600px;
+    top: 50px;
+  }
+
+  header#cabecalho{
+
+   /*border-bottom: 1px #fffefe solid;*/ 
+    height: 150px;
+   /* background: url("img/logosample.jpg") no-repeat 0px 100px; */
+}
+
+  header#cabecalho h1{
+    font-family: 'Titillium Web', sans-serif;    font-size: 30pt;
+    color:white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 80px;
+    margin-top: 220px;
+  }
+
+  header#cabecalho h2{
+    font-family:'FonteSubtitulo';
+    font-size: 15pt;
+    color:hsla(165, 14%, 17%, 0.5);
+    text-shadow: 1px 1px 1px rgba(182, 181, 181, 0.4);
+    padding: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  /* */
+
+  /* FORMATAÇÃO DO MENU*/
+
+  nav#menu{
+    display: block;
+    height: 25px;
+  }
+
+  nav#menu ul{
+    list-style: none;
+    position: absolute;
+    top: 360px;
+    left: 00px;
+
+  }
+
+  nav#menu li{
+    display: inline-block; /*pra ficar lado a lado os itens da lista*/
+    background-color: lightblue;
+    padding: 15px 90px 15px 113.671px;
+    margin: 1px;
+    margin-left: 0px;
+    transition: background-color 1s;
+  }
+
+  nav#menu li:hover{ /*passar mouse no menu e mudar cor*/
+    background-color: rgb(63, 109, 156);
+  }
+
+  nav#menu h1{
+    display: none; /*esconder o texto 'MENU PRINCIPAL'*/
+  }
+
+  nav#menu a{ /*formatando o menu feio q tinha ficado*/
+    color: black;
+    text-decoration: none;
+  }
+
+  nav#menu a:hover{
+    color: white;
+  }
+
+   /*Cards noticias*/ 
+
+ main.cards {
+  display: flex;
+  padding: 32px;
+}
+
+main.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+main.cards section.card img {
+  width: 100%;
+}
+
+main.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+main.cards section.card.pal1 button {
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+main.cards section.card.pal2 button {
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+
+ /*final cards*/
+
+ .associe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(66, 96, 141);
+  padding: 2rem 1.5rem;
+  max-height: 708px;
+  margin: -18px;
+ }
+
+ div#ass h1{
+   font-family: monospace;
+   font-size: 50px;
+   color: #fff;
+}
+
+.associe:hover{
+  color: #fff;
+  background-color: rgb(127, 167, 207);
+}
+
+div#fim {
+  background-color: #0d264a;
+  padding: 100px;
+}
+
+div#fim h3, img#tel{
+  color: #fff;
+  padding: 10px;
+  margin-left: 280px;
+}
+
