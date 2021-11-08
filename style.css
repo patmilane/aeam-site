@@ -88,9 +88,9 @@ body{
     margin-left: 20px;
   }
 
-  div#conteudo img#servicos{
+  div#conteudo /*img#servicos*/{
     height: auto;
-    margin-left: 60px;
+    margin-left: 180px;
   }
 
   div#conteudo img#associese:hover{
@@ -232,6 +232,7 @@ main.cards section.card.pal2 button {
   padding: 2rem 1.5rem;
   max-height: 708px;
   margin: -18px;
+  cursor: pointer;
  }
 
  div#ass h1{
@@ -254,5 +255,34 @@ div#fim h3, img#tel{
   color: #fff;
   padding: 10px;
   margin-left: 280px;
+}
+
+nav#redes li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+nav#redes {
+  list-style: none;
+  margin-left: 490px;
+  cursor: pointer;
+}
+
+nav#redes:hover {
+  list-style: none;
+  margin-left: 490px;
+}
+
+
+nav#servicos li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav#servicos li:hover{
+  background-color: rgb(75, 123, 172);
+  cursor: pointer;
 }
 
